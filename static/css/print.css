@@ -1,0 +1,28 @@
+table.standard td,table.standard th{background-color:#fff;}
+
+.red{color:#000;font-weight:bold;}
+.yellow{color:#000;font-style:italic;}
+.green{color:#000;}
+
+div.mb_info,div.mb_info b,div.mb_info p{font-family:Courier,monospace;border:1px solid #000;background-color:#fff;color:#000;font-family:Courier,monospace;}
+div.mb_error,div.mb_error b,div.mb_error p{font-family:Courier,monospace;border:1px solid #000;background-color:#fff;color:#000;font-family:Courier,monospace;}
+div.mb_warning,div.mb_warning b,div.mb_warning p{font-family:Courier,monospace;border:1px solid #000;background-color:#fff;color:#000;font-family:Courier,monospace;}
+div.mb_wrapper div{text-align:left;padding-left:4px;margin:0 auto;width:75%;}
+div.mb_wrapper{text-align:center;line-height:18px;}
+
+table.timetable,
+table.timetable td,
+table.timetable th
+{
+	border:1px solid #000;
+}
+
+.print{display:block;}
+
+.noprint{display:none;}
+#noprint{display:none;}
+
+div#content {
+	padding:0px;
+}
+

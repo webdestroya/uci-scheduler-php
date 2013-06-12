@@ -1,0 +1,23 @@
+Alias /static /scheduler/static/
+
+RewriteEngine on
+
+# Search page
+RewriteRule /search/([0-9]+)$ /search.php?id=$1 [NC,L]
+RewriteRule /search(.*)$  /search.php [NC,L]
+
+# Schedules
+RewriteRule /schedules/([0-9]+)$  /schedules.php?id=$1  [NC,L]
+RewriteRule /schedules([^0-9]+)$  /search   [NC,R,L]
+
+# Details
+RewriteRule /details/([a-zA-Z0-9]+)$  /details.php?sects=$1 [NC,L]
+
+# Changelog
+RewriteRule /changelog(.*)$   /changelog.php  [NC,L]
+
+# Contact
+RewriteRule /contact(.*)$   /contact.php [NC,L]
+
+# AJAX files
+RewriteRule /ajax/([a-z]+)$   /ajax_$1.php [NC,L]
